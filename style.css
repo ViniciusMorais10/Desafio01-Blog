@@ -1,0 +1,128 @@
+
+:root {
+  --blue: #3EA1DB;
+  --blue-dark: #574AE8;
+  --white: #FFF;
+
+  --title: #313131;
+  --text: #B6B6B6;
+  
+  --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F3F5F7; 
+}
+
+.header {
+  display: flex;
+  background: var(--linear);
+  height: 200px;
+  justify-content: center;
+  
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 60vw;
+}
+
+.title {
+  display: flex;
+  height: 80px;
+  width: 60vw;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.title p {
+  font-size: 26px;
+  color: #FFF;
+  font-family: Lexend Deca, sans-serif;
+  cursor: pointer;
+}
+
+
+.input {
+  height: 70px;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--linear); 
+  border-radius: 5px;
+  background: rgb(255,255,255,0.1);
+
+}
+
+input {
+  height: 80px;
+  width: 60vw;
+  border: 1px solid var(--linear);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #FFF;
+  background: none;
+  outline: 0;
+  margin-left: 20px;
+}
+input::placeholder {
+  color: #FFF;
+  opacity: 0.5;
+}
+img {
+  margin-left: 30px;
+}
+
+.content-cards{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.card1{
+  background-color: #FFF;
+  height: 205px;
+  width: 900px;
+  margin-top: 80px;
+  padding: 20px;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(19,19,31,0.05);
+}
+
+.card1 p{
+  font-family: Lexend Deca, sans-serif;
+  color: #B6B6B6;
+}
+
+.card1-input p{
+  font-size: 16px;
+}
+
+h2 {
+  font-family: Lexend Deca, sans-serif;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.card1-detail p{
+  font-size: 18px;
+}
+
+.card1-input {
+  display: flex;
+  justify-content: space-between;
+}
